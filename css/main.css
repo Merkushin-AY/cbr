@@ -1,0 +1,22 @@
+.rate {
+    position: relative;
+}
+.rate_main {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+}
+.rate_diff {
+    position: absolute;
+    top: -24px;
+    right: 0;
+    color: #ff5252;
+}
+.rate_diff.green {
+    color: #4caf50;
+}
+
+
+.apiError {
+    color: #ff5252;
+}

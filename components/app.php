@@ -57,7 +57,7 @@
                             item-value="value"
                             label="Базовая валюта (по умолчанию: RUB)"
                             single-line
-                            clearable="true"
+                            :clearable="true"
                         ></v-select>
                     </div>
 
@@ -84,7 +84,7 @@
                             <div class="rate_main" v-show="mainRate.length">
                                 {{mainRate}}
                             </div>
-                            <div class="rate_diff" v-show="diffRate.length" class="{green: diffRateIsPositive}">
+                            <div class="rate_diff" v-show="diffRate.length" :class="{'green--text': diffRateIsPositive}">
                                 {{diffRate}}
                             </div>
                         </div>

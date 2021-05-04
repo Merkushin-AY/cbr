@@ -38,7 +38,7 @@ new Vue({
                 })
                 .catch(e => {
                     console.error('Catched:', e);
-                    this.apiError = 'Что-то пошло не так. Обратите внимание, что на для корректной работы на сервере должен быть установлен SOAP';
+                    this.apiError = 'Что-то пошло не так. Обратите внимание, что для корректной работы на сервере должен быть установлен SOAP';
                 });
         },
 
@@ -61,7 +61,7 @@ new Vue({
                 })
                 .catch(e => {
                     console.error('Catched:', e);
-                    this.apiError = 'Что-то пошло не так. Обратите внимание, что на для корректной работы на сервере должен быть установлен SOAP';
+                    this.apiError = 'Что-то пошло не так. Обратите внимание, что для корректной работы на сервере должен быть установлен SOAP';
                 });
         },
 
@@ -87,14 +87,14 @@ new Vue({
                         this.diffRateIsPositive = this.diffRate > 0;
                         this.diffRate = this.diffRate.toFixed(4);
 
-                        this.mainRate = result.data[1].Vcurs.toFixed(4);
+                        this.mainRate = Number(result.data[1].Vcurs).toFixed(4);
                     } else {
                         this.apiError = result.error;
                     }
                 })
                 .catch(e => {
                     console.error('Catched:', e);
-                    this.apiError = 'Что-то пошло не так. Обратите внимание, что на для корректной работы на сервере должен быть установлен SOAP';
+                    this.apiError = 'Что-то пошло не так. Обратите внимание, что для корректной работы на сервере должен быть установлен SOAP';
                 });
         },
 

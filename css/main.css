@@ -12,10 +12,6 @@
     right: 0;
     color: #ff5252;
 }
-.rate_diff.green {
-    color: #4caf50;
-}
-
 
 .apiError {
     color: #ff5252;
